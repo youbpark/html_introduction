@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* inherit : 상속 -> body의 값을 상속받음 */
+}
+.logo {
+  /* rem : root(html)의 글자크기 */
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+nav {
+  border-bottom: 1px solid #ccc;
+}
+nav .innerBox {
+  display: flex; /* 자식 요소 한 줄 정렬, 공간 자동으로 나누고 정렬 */
+  padding: 20px 40px;
+  width: min(1100px, 80%); /* 1100px 또는 80%중 작은것을 선택 */
+  margin: 0 auto;
+  justify-content: space-between; /* 가로축 방향으로 아이템 사이 정렬 */
+  align-items: center; /* 세로로 가운데 정렬 */
+}
+nav ul {
+  display: flex;
+  list-style: none; /* 리스트 스타일 제거 */
+  gap: 40px;
+}
+nav ul a {
+  /* 선택 안 된 페이지는 밝은 회색*/
+  color: #ccc;
+}
+nav ul a:hover {
+  /* 마우스를 올렸을 때 조금 밝은 검정 */
+  color: rgb(13, 13, 20);
+  font-weight: bold;
+}
+nav ul a.selected {
+  /* 선택된 페이지는 검정색 */
+  color: rgb(13, 13, 20);
+  font-weight: bold;
+}
+@media (max-width: 750px) {
+  /* 데스크톱 화면에서 750으로 줄어들면 적용할 style */
+  /* min-width : 모바일 화면 기준으로 늘어날때 적용할  style */
+  nav .innerBox {
+    padding: 20px 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  nav ul {
+    gap: 20px;
+  }
+}

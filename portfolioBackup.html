@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .portfolioContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        padding: 0 40px 40px 40px;
+      }
+
+      .portfolioContainer h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+
+      .portfolioContainer h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .boxWrapper {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      .box1 {
+        display: flex;
+        flex-direction: column; /* 가로 정렬 무효화 */
+        justify-content: flex-start; /* direction 방향으로 정렬 */
+        align-items: center; /* direction과 반대축으로 정렬 */
+        text-align: justify;
+        border: 1px solid black;
+        border-radius: 25px;
+        width: 30%;
+        aspect-ratio: 1/1;
+        padding: 20px 20px 20px 20px;
+      }
+      .box2 {
+        display: flex;
+        flex-direction: column; /* 가로 정렬 무효화 */
+        justify-content: flex-start; /* direction 방향으로 정렬 */
+        align-items: center; /* direction과 반대축으로 정렬 */
+        text-align: justify;
+        background: blueviolet;
+        border: 1px solid blueviolet;
+        color: white;
+        border-radius: 25px;
+        width: 30%;
+        aspect-ratio: 1/1;
+        padding: 20px 20px 20px 20px;
+      }
+      .box3 {
+        display: flex;
+        flex-direction: column; /* 가로 정렬 무효화 */
+        justify-content: flex-start; /* direction 방향으로 정렬 */
+        align-items: center; /* direction과 반대축으로 정렬 */
+        text-align: justify;
+        background: skyblue;
+        border: 1px solid skyblue;
+        border-radius: 25px;
+        width: 30%;
+        aspect-ratio: 1/1;
+        padding: 20px 20px 20px 20px;
+      }
+      /* .box1,
+      .box2,
+      .box3 p {
+        height: auto;
+      } */
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="innerBox">
+        <div class="logo">
+          <a href="index.html">My Home</a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html" class="selected">Portfolio</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="portfolioContainer">
+      <h2>Portfolio</h2>
+      <div class="boxWrapper">
+        <div class="box1">
+          <h4>제목</h4>
+          <p>
+            장돌뱅이인 허 생원은 우연히 만난 젊은 장돌뱅이 동이와 대화 장터로
+            가는길에 밤길을 동행하게 되고, 달빛 아래 메밀꽃 밭에서 자신이 젊었을
+            때 물레방앗간에서 있었던 일을 회상한다.
+          </p>
+        </div>
+        <div class="box2">
+          <h4>제목</h4>
+        </div>
+        <div class="box3">
+          <h4>제목</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

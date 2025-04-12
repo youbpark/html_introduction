@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .portfolioContainer {
+        display: flex; /* 기본 방향이 가로 */
+        flex-direction: column; /* 방향을 세로 방향으로 정렬*/
+        justify-content: center; /* flex 방향을 따라 정렬 -> 주축이 세로, 세로 중앙 정렬*/
+        align-items: center; /* 주축의 반대 반향이므로 가로 중앙 정렬 */
+        margin-top: 40px;
+      }
+      .portfolioContainer > h2 {
+        /* > : 바로 아래에 위치한 h2만 적용 */
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+      }
+      .boxList {
+        display: flex;
+        justify-content: center; /* 가로 중앙 정렬 */
+        gap: 40px;
+      }
+      .box {
+        width: min(350px, 100%);
+        min-width: 350px;
+        min-height: 350px;
+        text-align: center;
+        padding: 30px;
+        border-radius: 30px;
+        border: 2px solid black;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        /* flex-direction: column;
+        justify-content: flex-start; 주축을 기준 위쪽 정렬
+        align-items: center; */
+      }
+      .box p {
+        margin-top: 10px;
+      }
+      .box:nth-child(1) {
+        background: rgb(247, 247, 247);
+      }
+      .box:nth-child(2) {
+        background: blueviolet;
+        color: white;
+      }
+      .box:nth-child(3) {
+        background: rgb(13, 13, 20);
+        color: white;
+      }
+
+      @media (max-width: 1100px) {
+        .boxList {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="innerBox">
+        <div class="logo">
+          <a href="index.html">My Home</a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html" class="selected">Portfolio</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 페이지 -->
+    <div class="portfolioContainer">
+      <h2>Portfolio</h2>
+      <div class="boxList">
+        <div class="box">
+          <h2>메밀꽃 필 무렵</h2>
+          <p>
+            장돌뱅이인 허 생원은 우연히 만난 젊은 장돌뱅이 동이와 대화 장터로
+            가는 길에 밤길을 동행하게 되고, 달빛 아래 메밀꽃 밭에서 자신이
+            젊었을 때 물레방앗간에서 있었던 성 서방네 처녀와의 이야기를
+            회상한다. 동이도 자신의 과거 이야기를 들려주며 생부가 누구인지 알고
+            싶다고 하는데, 이야기에 서로 비슷한 점이 많았던데다 결정적으로
+            동이가 왼손에 채찍을 들고 있는 것[2]을 보고 동이가 자신의 아들이라고
+            확신하면서 동이와 함께 동이의 어머니가 있다는 제천장으로 간다.
+          </p>
+        </div>
+        <div class="box">
+          <h2>소년이 온다</h2>
+          <p>
+            분수대에서 물이 나와서는 안된다고 생각합니다... 어떻게 벌써
+            분수대에서 물이 나옵니까. 무슨 축제라고 물이 나옵니까 네가 죽은 뒤
+            장례식을 치르지 못해, 내 삶이 장례식이 되었다. 네가 방수 모포에 싸여
+            청소차에 실려간 뒤에. 용서할 수 없는 물줄기가 번쩍이며 분수대에서
+            뿜어져 나온 뒤에. 어디서나 사원의 불빛이 타고 있었다. 봄에 피는 꽃들
+            속에, 눈송이들 속에. 날마다 찾아오는 저녁들 속에. 다 쓴 음료수 병에
+            네가 꽂은 양초 불꽃들이.
+          </p>
+        </div>
+        <div class="box">
+          <h2>작별하지 않는다</h2>
+          <p>
+            소설가 경하가 제주 친구 인선의 부탁으로 빈집의 새를 보살피러
+            눈보라를 뚫고 갔다가, 죽은 인선의 어머니(강정심)와 만난다. 꿈을
+            통해서다. 이어 드러나는바, 강정심은 제주 4.3 사건의 피해자이자
+            생존자로 당시 실종된 자신의 오빠를 찾다 생을 마쳤다. 정심의 마음이
+            바로 제목이고, 한강은 그것을 두고 “작별을 고하지 않고, 작별하지 않은
+            상태”라고 말한다. 작중 인물도, 작가 한강도 ‘악몽’을 통해 정심의
+            여정에 들어선다. 외국 서평에 “환상”, “환각” 따위의 단어가 등장하는
+            이유지만, 악몽은 우연이 아닌 애도의 마음이고, 결국 고통으로 연결된
+            마음의 가장 명징한 증거에 가까워 보인다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .homeContent {
+        text-align: justify;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column; /* 가로 정렬 무효화 */
+        justify-content: flex-start; /* direction 방향으로 정렬 */
+        align-items: center; /* direction과 반대축으로 정렬 */
+      }
+      .homeContent h2 {
+        max-width: min(1100px, 70%);
+        margin-bottom: 10px;
+      }
+      .homeContent p {
+        max-width: min(1100px, 70%);
+      }
+      .btnLogin {
+        display: inline-block;
+        background: linear-gradient(68deg, violet, blueviolet);
+        padding: 12px 28px;
+        border-radius: 100px;
+        margin-top: 20px;
+        color: white;
+        /* transition: background 1s; gradient는 적용이 안될수 있음 */
+      }
+      .btnLogin:hover {
+        background: linear-gradient(68deg, fuchsia, blueviolet);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 네비게이션바 -->
+    <!-- .클래스명 = <div class="nav"></div> -->
+    <nav>
+      <div class="innerBox">
+        <div class="logo">
+          <a href="index.html">My Home</a>
+        </div>
+        <ul>
+          <li><a href="index.html" class="selected">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 홈페이지 글, 버튼 -->
+    <div class="homeContent">
+      <h2>메밀꽃 필 무렵</h2>
+      <p>
+        조합을 목적으로 만든 키이기 때문에 단독 사용으로는 기능이 없다. Alt 키와
+        함께 조합을 위한 기본 용도로 쓰이기 때문에 규칙에 가까운 수준으로
+        굳어버린 키 조합이 많다. 예를 들어 대부분의 프로그램에서 왼쪽 Ctrl + S는
+        '저장하기'다(Save).
+      </p>
+      <a href="#" class="btnLogin">로그인</a>
+    </div>
+  </body>
+</html>

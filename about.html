@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        padding: 0 40px 40px 40px; /* 시계방향 */
+      }
+      .aboutContainer h2 {
+        font-size: 1.75rem; /* 글자는 rem, pt */
+        margin-bottom: 1em; /* 공간은 em, px */
+      }
+      .videoPlayer {
+        width: min(1100px, 100%);
+        aspect-ratio: 16/9; /* 가로 세로 비율 고정 */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="innerBox">
+        <div class="logo">
+          <a href="index.html">My Home</a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="selected">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- about  페이지 -->
+    <div class="aboutContainer">
+      <h2>About</h2>
+      <iframe
+        class="videoPlayer"
+        src="https://www.youtube.com/embed/V8DDt2F9piQ?si=Uq9ud8vz32-L0qZt"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
