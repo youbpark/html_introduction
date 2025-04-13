@@ -5,9 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <style></style>
+    <style>
+      .loginContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+      }
+      .loginContainer {
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+      }
+      input {
+        display: block;
+        margin: 10px auto;
+        border: none;
+        font-size: 1.25rem;
+        box-sizing: border-box;
+      }
+      input[type="text"],
+      input[type="password"] {
+        background: lightcyan;
+        border-radius: 1000px;
+        width: 300px;
+        padding: 10px 20px;
+        box-shadow: 0 0 2px inset rgba(0, 0, 0, 0.5);
+      }
+      input[type="submit"] {
+        width: 180px;
+        border-radius: 1000px;
+        padding: 4px 12px;
+        color: white;
+        background: #0071ff;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background: #0071aa;
+      }
+    </style>
   </head>
   <body>
+    <!-- 네비게이션바 -->
     <nav>
       <div class="innerBox">
         <div class="logo">
@@ -16,10 +55,20 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html" class="selected">Portfolio</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="login.html" class="selected">Login</a></li>
         </ul>
       </div>
     </nav>
+    <!-- 로그인 페이지 : 페이지 제목, 아이디 입력, 비밀번호 입력, 로그인 버튼 -->
+    <div class="loginContainer">
+      <h2>Login</h2>
+      <!-- 사용자 입력을 위해 form + input 태그 -->
+      <form>
+        <input type="text" placeholder="아이디를 입력하세요" />
+        <input type="password" placeholder="비밀번호를 입력하세요" />
+        <input type="submit" value="로그인" />
+      </form>
+    </div>
   </body>
 </html>
